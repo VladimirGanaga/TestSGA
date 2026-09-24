@@ -1,0 +1,35 @@
+# .NET / Visual Studio
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# JetBrains Rider / VS Code
+.idea/
+.vscode/
+*.sln.iml
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build artifacts
+publish/
+dist/
+
+# Docker local volumes (если случайно создадутся папки)
+pgdata/
+pgadmin_data/
+
+# Logs
+*.log
+
+# Python helper script (опционально, можно закоммитить)
+generate_results.py
+
+# NuGet
+packages/
