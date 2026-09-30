@@ -4,12 +4,6 @@ using TestTask.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureHttpJsonOptions(options =>
-{
-    options.SerializerOptions.WriteIndented = true;
-    options.SerializerOptions.PropertyNamingPolicy = JsonNamingPolicy.CamelCase;
-});
-
 builder.Services.AddControllers()
     .AddJsonOptions(options =>
     {
